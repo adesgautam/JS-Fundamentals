@@ -1,4 +1,5 @@
 
+// Base class
 class Fruit{
     constructor(name, color){
         this.name = name;
@@ -9,6 +10,7 @@ class Fruit{
     }
 }
 
+// Sub-class, Apple inherits from Fruit
 class Apple extends Fruit{
     constructor(name, color, region){
         super(name, color);
@@ -20,10 +22,10 @@ class Apple extends Fruit{
     }
 }
 // Add function to Apple Class
-Apple.prototype.showColor = function(){
+Fruit.prototype.showColor = function(){
     console.log(this.color);
 }
 
 var a = new Apple('My Apple', 'Red', 'Himachal Pradesh');
 a.show();
-a.showColor();
+a.showColor(); 
