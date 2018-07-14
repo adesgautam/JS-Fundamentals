@@ -11,3 +11,12 @@ let re1 = /^(Mr|Mrs|Ms|Dr|Er)\.\w+$/;
 var str = 'Dr.#Abuerbuebe veA';
 
 console.log(re1.test(str));
+
+// Match digits
+let re = /\d+/g;
+var str = '102, 1948948 and 1.3 and 4.5';
+
+const res = str.match(re);
+for (const e of res) {
+    console.log(e);
+}
