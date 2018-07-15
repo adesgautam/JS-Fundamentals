@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Click Button</title>
+        <style>
+            #btn{
+                width: 96px;
+                height: 59px;
+                font-size: 24px;
+                background-color: cornsilk;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var btn = document.createElement('button');
+            btn.id = 'btn';
+            btn.innerHTML = 0;
+            document.body.appendChild(btn);
+            var c = 0;
+            btn.onclick = function(){
+                c+=1;
+                btn.innerHTML = c;
+            };
+        </script>
+    </body>
+</html>
